@@ -1,0 +1,23 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$AnalyticsDashboardImpl _$$AnalyticsDashboardImplFromJson(
+        Map<String, dynamic> json) =>
+    _$AnalyticsDashboardImpl(
+      totalBookings: (json['total_bookings'] as num).toInt(),
+      totalRevenue: (json['total_revenue'] as num).toDouble(),
+      activeUsers: (json['active_users'] as num).toInt(),
+      activeHalls: (json['active_halls'] as num).toInt(),
+      period: json['period'] as String,
+    );
+
+Map<String, dynamic> _$$AnalyticsDashboardImplToJson(
+        _$AnalyticsDashboardImpl instance) =>
+    <String, dynamic>{
+      'total_bookings': instance.totalBookings,
+      'total_revenue': instance.totalRevenue,
+      'active_users': instance.activeUsers,
+      'active_halls': instance.activeHalls,
+      'period': instance.period,
+    };

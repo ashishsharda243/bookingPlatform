@@ -1,0 +1,1 @@
+ /Users/ashishsharda/Desktop/bookingPlatform/hall_booking_platform/.dart_tool/flutter_build/d97ff3078cbf23b9f6a169a825333ae8/dart_build_result.json:  /Users/ashishsharda/Desktop/bookingPlatform/hall_booking_platform/.dart_tool/package_config.json /Users/ashishsharda/Desktop/bookingPlatform/hall_booking_platform/pubspec.yaml /opt/homebrew/share/flutter/bin/cache/dart-sdk/version

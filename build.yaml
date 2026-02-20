@@ -1,0 +1,25 @@
+targets:
+  $default:
+    builders:
+      freezed:
+        generate_for:
+          include:
+            - lib/**/*.dart
+        options:
+          map: true
+          when: true
+          copy_with: true
+          equal: true
+          to_string: true
+      json_serializable:
+        generate_for:
+          include:
+            - lib/**/*.dart
+        options:
+          explicit_to_json: true
+          include_if_null: false
+          field_rename: snake
+      riverpod_generator:
+        generate_for:
+          include:
+            - lib/**/*.dart
