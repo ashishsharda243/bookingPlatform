@@ -1,0 +1,28 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'review.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$ReviewImpl _$$ReviewImplFromJson(Map<String, dynamic> json) => _$ReviewImpl(
+  id: json['id'] as String,
+  userId: json['user_id'] as String,
+  hallId: json['hall_id'] as String,
+  rating: (json['rating'] as num).toInt(),
+  comment: json['comment'] as String?,
+  createdAt: DateTime.parse(json['created_at'] as String),
+  userName: json['user_name'] as String?,
+);
+
+Map<String, dynamic> _$$ReviewImplToJson(_$ReviewImpl instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'user_id': instance.userId,
+      'hall_id': instance.hallId,
+      'rating': instance.rating,
+      if (instance.comment case final value?) 'comment': value,
+      'created_at': instance.createdAt.toIso8601String(),
+      if (instance.userName case final value?) 'user_name': value,
+    };
